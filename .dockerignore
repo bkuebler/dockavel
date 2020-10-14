@@ -1,0 +1,63 @@
+# Laravel gitignore files inside directory tree
+/database/*.sqlite
+/database/*.sqlite-journal
+/bootstrap/cache/*
+/storage/app/*
+!/storage/app/public/
+/storage/app/public/*
+/storage/framework/cache/*
+!/storage/framework/cache/data/
+/storage/framework/cache/data/*
+/storage/framework/testing/*
+/storage/framework/sessions/*
+/storage/framework/.gitignore
+/storage/framework/compiled.php
+/storage/framework/config.php
+/storage/framework/down
+/storage/framework/events.scanned.php
+/storage/framework/maintenance.php
+/storage/framework/routes.php
+/storage/framework/routes.scanned.php
+/storage/framework/schedule-*
+/storage/framework/services.json
+/storage/framework/views/*
+/storage/logs/*
+
+# Laravel gitignore
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+# Dockavel files which should not copied into images
+/docker/volumes
+.dockerignore
+CHANGELOG.md
+docker-compose.yml
+LICENSE
+Makefile
+README.md
+
+# No Git stuff inside images
+.git
+.gitignore
+.gitattributes
+
+# Laravel files which should not be available in production images
+/public/.htaccess
+.editorconfig
+.env.example
+.styleci.yml
+package-lock.json
+package.json
+phpunit.xml
+server.php
+webpack.mix.js
